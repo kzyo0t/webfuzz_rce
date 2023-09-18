@@ -1,0 +1,4 @@
+wp-includes
+wp-admin/includes
+wp-admin/custom-header.php
+wp-content/themes/twentynineteen/classes
