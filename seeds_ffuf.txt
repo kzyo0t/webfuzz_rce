@@ -1,0 +1,11 @@
+-u http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=FUZZ
+-u http://dvpa.lab:8000/RCE-Labs/RCE-2/rce_2.php?domain=FUZZ
+-d {"domain":"FUZZ"} -u http://dvpa.lab:8000/RCE-Labs/RCE-3/rce_3.php
+-d {"exec":"FUZZ"} -u http://dvpa.lab:8000/RCE-Labs/RCE-4/rce_4.php
+-d {"cmd":"FUZZ"} -u http://dvpa.lab:8000/RCE-Labs/RCE-5/rce_5.php
+-u http://dvpa.lab:8000/main.html?test=FUZZ
+-d {"username":"FUZZ","password":"FUZZ"} -u http://dvpa.lab:8000/PHP-Type-Juggling-Labs/md4.php
+-d {"username":"FUZZ","password":"FUZZ","login":""} -u http://dvpa.lab:8000/PHP-Type-Juggling-Labs/md5.php
+-d {"username":"FUZZ","password":"FUZZ","login":""} -u http://dvpa.lab:8000/PHP-Type-Juggling-Labs/sha1.php
+-d {"username":"FUZZ","password":"FUZZ","login":""} -u http://dvpa.lab:8000/PHP-Type-Juggling-Labs/sha256.php
+-d {"username":"FUZZ","password":"FUZZ","login":""} -u http://dvpa.lab:8000/PHP-Type-Juggling-Labs/sha224.php

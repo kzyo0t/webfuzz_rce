@@ -1,0 +1,21 @@
+Running BrowserMob Proxy using LittleProxy implementation. To revert to the legacy implementation, run the proxy with the command-line option '--use-littleproxy false'.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/media/webfuzz/24c742b7-ca4c-44c5-9b12-a0ed84e774f9/webfuzz-fuzzer/webFuzz/webFuzz/drivers/browsermob-proxy-2.1.4/lib/browsermob-dist-2.1.4.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO  2023-06-14T12:16:32,664 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2023-06-14T12:16:32,688 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2023-06-14T12:16:32,714 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2023-06-14T12:16:32,803 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8090 
+[INFO  2023-06-14T12:16:33,690 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp164439551-17) Starting proxy at address: 0.0.0.0/0.0.0.0:8091 
+[INFO  2023-06-14T12:16:33,752 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp164439551-17) Proxy listening with TCP transport 
+[INFO  2023-06-14T12:16:33,804 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp164439551-17) Proxy started at address: /0:0:0:0:0:0:0:0:8091 
+[WARN  2023-06-14T12:16:36,193 net.lightbody.bmp.mitm.util.SslUtil] (LittleProxy-0-ClientToProxyWorker-0) Disabling upstream server certificate verification. This will allow attackers to intercept communications with upstream servers. 
+[INFO  2023-06-14T12:16:41,074 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp164439551-19) Shutting down proxy server gracefully 
+[INFO  2023-06-14T12:16:41,074 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp164439551-19) Closing all channels (graceful) 
+[INFO  2023-06-14T12:16:41,081 org.littleshoot.proxy.impl.ServerGroup] (qtp164439551-19) Shutting down server group event loops (graceful) 
+[INFO  2023-06-14T12:16:41,094 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-1) (HANDSHAKING) [id: 0x76980ed3, L:0.0.0.0/0.0.0.0:45016]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2023-06-14T12:16:43,384 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp164439551-19) Done shutting down proxy server 
