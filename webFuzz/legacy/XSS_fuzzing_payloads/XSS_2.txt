@@ -1,0 +1,2 @@
+# credit to rsnake
+<SCRIPT>alert('XSS');</SCRIPT>
